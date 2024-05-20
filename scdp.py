@@ -16,11 +16,11 @@ st.write("""
 
 st.write("""
     
-    # Predicting Sand Casting Surface Defects using a Data-Driven Supervised Machine Learning Approach: A Case Study at Akaki Basic Metals Industry
+    # Predicting Sand Casting Defects using a Data-Driven Supervised Machine Learning Approach: A Case Study of Akaki Basic Metals Industry
 
     ## Surface Cast Defect Prediction App
 
-    ## This app predicts the **Surface Cast Defect Type** based on various features.
+    ## This app predicts the **Sand Cast Defect Type** based on various features.
     
     **By: Demewez Demeke (GSR/0439/15)**
 
@@ -28,7 +28,7 @@ st.write("""
 
     **Co-Advisor: Mr. Henok Zewdu (Ph.D. Candidate)**
 
-    In the detection of advancing quality control practices within the global metal casting industry, the research focuses on the Akaki Basic Metals Foundry in Ethiopia, a key player facing challenges associated with surface defects in cast iron and steel metal components. Utilizing data-driven machine learning, particularly the supervise algorithm, the study aims to predict and prevent surface defects, mitigating structural integrity issues and reducing environmental impact. The research methodology involves a comprehensive literature survey, historical data collection, exploratory analysis, feature engineering, and model optimization. The anticipated outcome is a predictive model not only enhancing defect identification but also contributing to energy minimization and sustainability goals. This initiative positions Akaki Basic Metals Foundry as a leader in quality assurance, aligning with global imperatives of economic viability, competitiveness, and environmentally responsible manufacturing practices.
+    In the detection of advancing quality control practices within the global metal casting industry, the research focuses on the Akaki Basic Metals Foundry in Ethiopia, a key player facing challenges associated with cast defects in cast iron, steel, and bronze metal components. The study uses data-driven machine learning, particularly the supervised algorithm, to predict and prevent defects, mitigating structural integrity issues and reducing environmental impact. The research methodology involves a comprehensive literature survey, historical data collection, exploratory analysis, feature engineering, and model optimization. The anticipated outcome is a predictive model enhancing defect identification and contributing to energy minimization and sustainability goals. This initiative positions Akaki Basic Metals Foundry as a leader in quality assurance, aligning with global imperatives of economic viability, competitiveness, and environmentally responsible manufacturing practices.
 
     """)
 
@@ -37,10 +37,10 @@ st.write("""
 
 ## Dataset Information
 
-This dataset is collected manually by the researcher from Akaki Basic Metals Industry.
+This dataset is collected manually by the researcher from the Akaki Basic Metals Industry.
 """)
 
-# Load the Boston housing dataset from the original source
+# Load the Boston housing dataset from the source
 data_url = "./modified_dataset_for_shape.csv"
 data = pd.read_csv(data_url)
 
@@ -173,7 +173,7 @@ def run_model(model_name):
     prediction = model.predict(df)
     
     st.header(f'Prediction of Defect Type using {model_name}')
-    st.write("Here is the predicted sand surface defect type:")
+    st.write("Here is the predicted sand casting defect type:")
     st.write(prediction)
     st.write('---')
     
@@ -278,6 +278,6 @@ st.write("""
 
 ## Thank you!
 
-**Contributor:** Demewoz
+**Contributor:** Demewez
 
 """)
